@@ -1,0 +1,195 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 2;
+  background-color: #f0f4f8; /* Light background for a softer look */
+  color: #333; /* Default text color */
+}
+body {
+  margin: 0; /* Menghapus margin default pada body */
+  font-family: Arial, sans-serif; /* Mengatur font untuk seluruh halaman */
+}
+/* Navbar Styles */
+.navbar {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  width: 100%; /* Full width of the viewport */
+  background-color: #f0f0f0; /* Background color of the navbar */
+  padding: 10px 20px; /* Padding for the navbar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow below the navbar */
+  position: sticky; /* Keep navbar at the top when scrolling */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.profile-pic {
+  width: 40px; /* Set a fixed width for the profile picture */
+  height: 40px; /* Set a fixed height for the profile picture */
+  border-radius: 50%; /* Make the profile picture circular */
+  margin-right: 20px; /* Space between image and links */
+}
+
+.navbar a {
+  margin: 0 15px; /* Space between links */
+  padding: 10px; /* Padding for each link */
+  color: #0077b5; /* Link text color */
+  text-decoration: none; /* Remove underline from links */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.navbar a:hover {
+  background-color: #e0e0e0; /* Background color on hover */
+}
+.container {
+  padding: 80px 20px;
+}
+#about-me {
+  padding: 20px; /* Padding untuk bagian About Me */
+  background-color: #f9f9f9; /* Warna latar belakang */
+  border-radius: 5px; /* Sudut melengkung */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.about-container {
+  display: flex; /* Mengatur elemen dalam baris */
+  align-items: center; /* Menyelaraskan elemen secara vertikal */
+}
+
+.about-text {
+  flex: 1; /* Memungkinkan teks mengambil ruang yang tersedia */
+  margin-right: 20px; /* Jarak antara teks dan gambar */
+}
+
+.about-image {
+  flex: 0 0 20%; /* Mengatur lebar gambar menjadi 20% dari kontainer */
+}
+
+.about-image img {
+  max-width: 100%; /* Memastikan gambar responsif */
+  height: auto; /* Mempertahankan rasio aspek gambar */
+  border-radius: 5px; /* Sudut melengkung pada gambar */
+}
+
+h1 {
+  margin-bottom: 10px; /* Jarak bawah dari judul */
+}
+
+.highlight {
+  color: #0077b5; /* Warna untuk teks yang disorot */
+}
+
+#connect-me {
+  padding: 20px; /* Padding untuk bagian Connect Me */
+  background-color: #f0f0f0; /* Warna latar belakang */
+  border-radius: 5px; /* Sudut melengkung */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+  margin-top: 10px; /* Jarak atas dari bagian sebelumnya */
+}
+
+h2 {
+  margin-bottom: 15px; /* Jarak bawah dari judul */
+}
+
+.social-links {
+  list-style-type: none; /* Menghapus bullet dari daftar */
+  padding: 0; /* Menghapus padding default */
+}
+
+.social-links li {
+  margin-bottom: 10px; /* Jarak bawah untuk setiap item daftar */
+}
+
+.social-links a {
+  text-decoration: none; /* Menghapus garis bawah dari tautan */
+  color: #0077b5; /* Warna tautan */
+  font-weight: bold; /* Membuat teks tautan lebih tebal */
+}
+
+.social-links a:hover {
+  text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+h1,
+h2 {
+  color: #007bff; /* Primary color for headings */
+  margin-bottom: 20px; /* Spacing below headings */
+}
+
+section {
+  margin-bottom: 60px; /* Increased margin for better separation */
+  padding: 20px;
+  background-color: white; /* White background for sections */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+}
+
+footer {
+  background: linear-gradient(
+    90deg,
+    #007bff,
+    #0056b3
+  ); /* Gradient background */
+  color: white;
+  text-align: center;
+  padding: 15px 0; /* Increased padding for better spacing */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for input focus */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .navbar a {
+    margin: 10px 0; /* Margin for vertical spacing */
+  }
+
+  .container {
+    padding: 60px 10px; /* Adjust padding for smaller screens */
+  }
+
+  section {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
